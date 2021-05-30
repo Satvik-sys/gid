@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3),rgba(0,168,255,0.3)),url(./yoga.jpg);
+    background-repeat: no-repeat;   
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100% ,  0 75% , 0 0);
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .4;
+    z-index: -1;
+    background: linear-gradient(to right, #5de4fc 0%, #3ccdbb 0%, #16c9f6 100% );
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .4;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100% );
+}
+.nav-item a{
+    font-weight: bold;
+    color: #fff !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.center-div{
+width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%);
+-moz-transform: translate(-50%,-50%);
+}
+
+.header-section p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+font-weight: 400;
+color: #dd2525;
+}
+
+.header-buttons a{
+ border: 3px solid white;
+ border-radius: 100px;
+ color: white;
+ margin: 0 5px;
+ outline: none;
+ padding: 12px 35px;
+ font-size: 1rem;
+ font-weight: 4=700;
+ line-height: 1.4;
+ text-align: center;
+}
+
+.header-buttons a:hover{
+color: #000;
+background-color: white;
+text-decoration: none;
+transition: all .3s;
+font-weight: 700;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
+
+#info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+#contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    margin-top: 100px;
+    right: 20;
+}
+
+#gallery{
+        position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.lineS{
+ width: 275px;
+ height: 5px;
+ background-color: black;
+ margin-top: 50px;
+}
+
+
+.guys{
+    position: absolute;
+    color: black;
+    
+}
+
+#myBtn{
+   
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background-color: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover{
+ background-color: gray;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin-top: 50px;
+   
+}
+
+
+@media (max-width: 768px) {
+    .nav-item{
+        text-align: center!important;
+    }
+}
+.lineA{
+    width: 150px;
+    height: 5px;
+    background-color: black;
+    margin-top: 50px;
+   
+}
+
+
+.contact-info{
+    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    
+}
+.card{
+    
+    background: #2f3542;
+    border-radius: 0;
+    border: none;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 200px ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon{
+    font-size: 28px;
+    background-color: #ff6348;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+ background: none;
+ color: #ff6348;
+ transform: scale(1.6);
+ 
+}.card p {
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    
+    max-height: 0;
+    opacity: 0;
+    transition:  0.3s linear;
+}
+
+.card:hover .hello{
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-info{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0 ;
+    }
+    iframe{
+        width: 350px;
+    }
+}
